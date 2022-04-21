@@ -48,6 +48,12 @@ const MainForm = (props) => {
         address,
         note,
       };
+      const msg = `Food Details: \n
+                  Name: ${name} \n
+                  Mobile: ${mobile} \n
+                  Food Items: ${food} \n
+                  Address: ${address} \n
+                  Comments: ${note}`;
       setSubmitting(true);
       fetch("https://giveaway-23069-default-rtdb.firebaseio.com/orders.json", {
         method: "POST",
@@ -71,8 +77,12 @@ const MainForm = (props) => {
             "template_q3mitav",
             {
               to_name: "ankit bhaskar",
-              from_name: { name },
-              message: { data },
+              from_name: `${name}`,
+              name: name,
+              mobile: mobile,
+              food: food,
+              address: address,
+              note: note,
             },
             "s8Ep-G_ANfHn-JDOh"
           ).then(
