@@ -71,8 +71,8 @@ const MainForm = (props) => {
             "template_q3mitav",
             {
               to_name: "ankit bhaskar",
-              from_name: "somveer",
-              message: "hi",
+              from_name: { name },
+              message: { data },
             },
             "s8Ep-G_ANfHn-JDOh"
           ).then(
