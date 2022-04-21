@@ -76,7 +76,7 @@ const MainForm = (props) => {
             "service_8yplb3p",
             "template_q3mitav",
             {
-              to_name: "ankit bhaskar",
+              to_name: "Ankit Bhaskar",
               from_name: `${name}`,
               name: name,
               mobile: mobile,
